@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Capital - Investment Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Apex Capital Logo">
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-mask"></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="images/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+            <h1>Grow Your Wealth With Confidence</h1>
+            <p>Professional investment solutions tailored to your financial goals</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Get Started</a>
+                <a href="#services" class="btn secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Investment Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/Portfolio Management.png" alt="Portfolio Management">
+                    </div>
+                    <h3>Portfolio Management</h3>
+                    <p>Customized investment portfolios designed to meet your specific financial objectives and risk tolerance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/Retirement Planning.png" alt="Retirement Planning">
+                    </div>
+                    <h3>Retirement Planning</h3>
+                    <p>Strategic planning to ensure a secure and comfortable retirement with optimized investment strategies.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/Wealth Preservation.png" alt="Wealth Preservation">
+                    </div>
+                    <h3>Wealth Preservation</h3>
+                    <p>Protect and grow your assets through diversified investment approaches and risk management.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/Market Analysis.png" alt="Market Analysis">
+                    </div>
+                    <h3>Market Analysis</h3>
+                    <p>In-depth research and analysis to identify opportunities and navigate market conditions effectively.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/Estate Planning.png" alt="Estate Planning">
+                    </div>
+                    <h3>Estate Planning</h3>
+                    <p>Strategic planning to ensure your wealth is transferred according to your wishes with minimized tax implications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/Financial Advisory.png" alt="Financial Advisory">
+                    </div>
+                    <h3>Financial Advisory</h3>
+                    <p>Personalized guidance to help you make informed financial decisions and achieve long-term wealth goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Why Choose Apex Capital</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>With over 15 years of experience in financial markets, our team of certified investment professionals delivers personalized strategies to help you achieve your financial goals.</p>
+                    <p>We believe in transparent communication and fiduciary responsibility, putting your interests first in every decision we make.</p>
+                    <ul>
+                        <li>Certified Financial Planners</li>
+                        <li>Customized Investment Strategies</li>
+                        <li>Transparent Fee Structure</li>
+                        <li>24/7 Client Support</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="images/team.jpg" alt="Our Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><strong>Phone:</strong> (555) 123-4567</p>
+                    <p><strong>Email:</strong> info@apexcapital.com</p>
+                    <p><strong>Address:</strong> 123 Financial District, New York, NY 10001</p>
+                    <p><strong>Hours:</strong> Monday - Friday: 9AM - 5PM</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Apex Capital Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <p>© 2023 Apex Capital. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('nav');
+            const navMask = document.querySelector('.nav-mask');
+            const header = document.querySelector('header');
+            
+            menuToggle.addEventListener('click', () => {
+                menuToggle.classList.toggle('active');
+                nav.classList.toggle('active');
+                navMask.classList.toggle('active');
+            });
+            
+            // Close menu when clicking on the mask
+            navMask.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                nav.classList.remove('active');
+                navMask.classList.remove('active');
+            });
+            
+            // Close menu when clicking on a link
+            document.querySelectorAll('nav a').forEach(link => {
+                link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
+                    nav.classList.remove('active');
+                    navMask.classList.remove('active');
+                });
+            });
+            
+            // Header background change on scroll
+            if (header) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 100) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
