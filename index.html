@@ -4,14 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apex Capital - Investment Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Apex Capital provides professional investment solutions including portfolio management, retirement planning, and wealth preservation. Grow your wealth with confidence through our expert financial advisory services.">
+    <meta name="keywords" content="investment, financial planning, portfolio management, retirement planning, wealth preservation, financial advisory, Apex Capital">
+    <meta name="author" content="Apex Capital">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://apexcapital.com">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Apex Capital - Investment Solutions">
+    <meta property="og:description" content="Professional investment solutions tailored to your financial goals. Portfolio management, retirement planning, and wealth preservation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://apexcapital.com">
+    <meta property="og:site_name" content="Apex Capital">
+    <meta property="og:image" content="https://apexcapital.com/images/og-image.jpg">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Apex Capital - Investment Solutions">
+    <meta name="twitter:description" content="Professional investment solutions tailored to your financial goals. Grow your wealth with confidence.">
+    <meta name="twitter:image" content="https://apexcapital.com/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💰%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💰%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="styles.css?v=17">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialService",
+        "name": "Apex Capital",
+        "description": "Professional investment solutions and financial advisory services",
+        "url": "https://apexcapital.com",
+        "telephone": "(555) 123-4567",
+        "email": "info@apexcapital.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Financial District",
+            "addressLocality": "New York",
+            "addressRegion": "NY",
+            "postalCode": "10001",
+            "addressCountry": "US"
+        },
+        "openingHours": "Mo-Fr 09:00-17:00",
+        "priceRange": "$$"
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Social Proof Notification -->
+    <div class="social-proof" id="socialProof">
+        <div class="social-proof-content">
+            <span class="social-proof-icon">✓</span>
+            <span class="social-proof-text"><strong>Sarah from NY</strong> just signed up for a consultation</span>
+            <button class="social-proof-close" aria-label="Close notification">&times;</button>
+        </div>
+    </div>
+
     <!-- Header Section -->
     <header>
         <div class="container">
             <div class="logo">
-                <img src="images/logo.png" alt="Apex Capital Logo">
+                <img src="images/logo_white.png" alt="Apex Capital Logo" class="logo-white">
+                <img src="images/logo.png" alt="Apex Capital Logo" class="logo-dark">
             </div>
             <div class="menu-toggle">
                 <span></span>
@@ -25,16 +88,37 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li class="nav-divider desktop-only"></li>
+                    <li class="desktop-only">
+                        <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+                            <span class="dark-mode-icon">🌙</span>
+                        </button>
+                    </li>
+                    <li class="mobile-only">
+                        <button class="dark-mode-toggle mobile-menu-toggle" aria-label="Toggle dark mode">
+                            <span class="dark-mode-icon">🌙</span>
+                            <span class="dark-mode-text">Dark Mode</span>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Main Content -->
+    <main id="main-content" role="main">
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <video autoplay muted loop class="hero-video">
+        <video autoplay muted loop class="hero-video" playsinline>
             <source src="images/hero-bg.mp4" type="video/mp4">
         </video>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
         <div class="container">
             <h1>Grow Your Wealth With Confidence</h1>
             <p>Professional investment solutions tailored to your financial goals</p>
@@ -45,49 +129,101 @@
         </div>
     </section>
 
+    <!-- Statistics Section -->
+    <section class="statistics fade-in-section">
+        <div class="container">
+            <div class="stats-grid stagger-children">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="15" data-type="default">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="500" data-type="assets">0</div>
+                    <div class="stat-label">Assets Managed (M)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2500" data-type="clients">0</div>
+                    <div class="stat-label">Clients Served</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="35" data-type="default">0</div>
+                    <div class="stat-label">Team Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Certifications Section -->
+    <section class="awards fade-in-section">
+        <div class="container">
+            <div class="awards-grid">
+                <div class="award-badge">
+                    <div class="award-icon">🏆</div>
+                    <div class="award-text">Best Investment Firm 2023</div>
+                </div>
+                <div class="award-badge">
+                    <div class="award-icon">✓</div>
+                    <div class="award-text">SEC Registered</div>
+                </div>
+                <div class="award-badge">
+                    <div class="award-icon">🔒</div>
+                    <div class="award-text">256-bit Encryption</div>
+                </div>
+                <div class="award-badge">
+                    <div class="award-icon">⭐</div>
+                    <div class="award-text">4.9/5 Client Rating</div>
+                </div>
+                <div class="award-badge">
+                    <div class="award-icon">🛡️</div>
+                    <div class="award-text">SIPC Protected</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
-    <section id="services" class="services">
+    <section id="services" class="services fade-in-section">
         <div class="container">
             <h2>Our Investment Services</h2>
-            <div class="service-grid">
+            <div class="service-grid stagger-children">
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="images/Portfolio Management.png" alt="Portfolio Management">
+                        <img loading="lazy" src="images/Portfolio Management.png" alt="Portfolio Management">
                     </div>
                     <h3>Portfolio Management</h3>
                     <p>Customized investment portfolios designed to meet your specific financial objectives and risk tolerance.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="images/Retirement Planning.png" alt="Retirement Planning">
+                        <img loading="lazy" src="images/Retirement Planning.png" alt="Retirement Planning">
                     </div>
                     <h3>Retirement Planning</h3>
                     <p>Strategic planning to ensure a secure and comfortable retirement with optimized investment strategies.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="images/Wealth Preservation.png" alt="Wealth Preservation">
+                        <img loading="lazy" src="images/Wealth Preservation.png" alt="Wealth Preservation">
                     </div>
                     <h3>Wealth Preservation</h3>
                     <p>Protect and grow your assets through diversified investment approaches and risk management.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="images/Market Analysis.png" alt="Market Analysis">
+                        <img loading="lazy" src="images/Market Analysis.png" alt="Market Analysis">
                     </div>
                     <h3>Market Analysis</h3>
                     <p>In-depth research and analysis to identify opportunities and navigate market conditions effectively.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="images/Estate Planning.png" alt="Estate Planning">
+                        <img loading="lazy" src="images/Estate Planning.png" alt="Estate Planning">
                     </div>
                     <h3>Estate Planning</h3>
                     <p>Strategic planning to ensure your wealth is transferred according to your wishes with minimized tax implications.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="images/Financial Advisory.png" alt="Financial Advisory">
+                        <img loading="lazy" src="images/Financial Advisory.png" alt="Financial Advisory">
                     </div>
                     <h3>Financial Advisory</h3>
                     <p>Personalized guidance to help you make informed financial decisions and achieve long-term wealth goals.</p>
@@ -97,7 +233,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about fade-in-section">
         <div class="container">
             <h2>Why Choose Apex Capital</h2>
             <div class="about-content">
@@ -112,14 +248,251 @@
                     </ul>
                 </div>
                 <div class="about-image">
-                    <img src="images/team.jpg" alt="Our Team">
+                    <img loading="lazy" src="images/team.jpg" alt="Apex Capital Team - Professional Investment Advisors">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team fade-in-section">
+        <div class="container">
+            <h2>Meet Our Leadership Team</h2>
+            <div class="team-grid stagger-children">
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://ui-avatars.com/api/?name=David+Mitchell&background=1e40af&color=fff&size=200" alt="David Mitchell">
+                    </div>
+                    <h3>David Mitchell</h3>
+                    <p class="team-role">CEO & Founder</p>
+                    <p class="team-bio">20+ years in investment management</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://ui-avatars.com/api/?name=Jennifer+Lee&background=2563eb&color=fff&size=200" alt="Jennifer Lee">
+                    </div>
+                    <h3>Jennifer Lee</h3>
+                    <p class="team-role">Chief Investment Officer</p>
+                    <p class="team-bio">Former Goldman Sachs VP</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://ui-avatars.com/api/?name=Robert+Chen&background=3b82f6&color=fff&size=200" alt="Robert Chen">
+                    </div>
+                    <h3>Robert Chen</h3>
+                    <p class="team-role">Head of Portfolio Management</p>
+                    <p class="team-bio">CFP® certified, 15 years experience</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://ui-avatars.com/api/?name=Amanda+Torres&background=60a5fa&color=fff&size=200" alt="Amanda Torres">
+                    </div>
+                    <h3>Amanda Torres</h3>
+                    <p class="team-role">Client Relations Director</p>
+                    <p class="team-bio">Dedicated to client success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials fade-in-section">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials-grid carousel">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">Apex Capital has transformed my retirement planning. Their personalized approach and deep market knowledge gave me confidence in my financial future.</p>
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Johnson&background=2563eb&color=fff&size=120" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <strong>Sarah Johnson</strong>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">The team's expertise in portfolio management is exceptional. They've helped me navigate market volatility while achieving consistent growth.</p>
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=2563eb&color=fff&size=120" alt="Michael Chen">
+                            <div class="author-info">
+                                <strong>Michael Chen</strong>
+                                <span>Software Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-mark">"</div>
+                        <p class="testimonial-text">Transparent, professional, and always available. Apex Capital truly puts their clients first. I couldn't ask for better financial partners.</p>
+                        <div class="testimonial-author">
+                            <img src="https://ui-avatars.com/api/?name=Emily+Rodriguez&background=2563eb&color=fff&size=120" alt="Emily Rodriguez">
+                            <div class="author-info">
+                                <strong>Emily Rodriguez</strong>
+                                <span>Healthcare Executive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <div class="carousel-dot active" data-index="0"></div>
+                    <div class="carousel-dot" data-index="1"></div>
+                    <div class="carousel-dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section class="case-studies fade-in-section">
+        <div class="container">
+            <h2>Success Stories</h2>
+            <div class="case-studies-grid stagger-children">
+                <div class="case-card">
+                    <div class="case-icon">📈</div>
+                    <h3>Retirement Planning Success</h3>
+                    <p class="case-metric"><span class="metric-value">+45%</span> Portfolio Growth</p>
+                    <p>Helped a 55-year-old executive achieve retirement goals 5 years ahead of schedule through strategic portfolio rebalancing.</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-icon">🏠</div>
+                    <h3>Wealth Building Journey</h3>
+                    <p class="case-metric"><span class="metric-value">$2.5M</span> Assets Grown</p>
+                    <p>Guided a tech professional from $500K to $3M in assets over 8 years through diversified investment strategies.</p>
+                </div>
+                <div class="case-card">
+                    <div class="case-icon">💰</div>
+                    <h3>Estate Planning Victory</h3>
+                    <p class="case-metric"><span class="metric-value">$800K</span> Tax Savings</p>
+                    <p>Structured an estate plan that preserved wealth across generations while minimizing tax burden for a family business owner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq fade-in-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What is the minimum investment required?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We work with clients starting from $100,000 in investable assets. However, we also offer consultation services for those looking to build their investment portfolio to that level.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How are you different from robo-advisors?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Unlike automated platforms, we provide personalized, human guidance. Our certified financial planners consider your complete financial picture, life goals, and risk tolerance to create customized strategies.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What are your fees?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We operate on a transparent fee structure based on assets under management (AUM), typically ranging from 0.75% to 1.25% annually. No hidden fees, no commissions on products.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How often will we meet?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We schedule quarterly reviews at minimum, with additional check-ins as needed. You'll have direct access to your advisor via phone, email, or video call whenever questions arise.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Are my investments insured?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we're members of SIPC (Securities Investor Protection Corporation), which protects up to $500,000 in securities. Additionally, we carry extra insurance coverage for added protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Calculator Section -->
+    <section class="calculator fade-in-section">
+        <div class="container">
+            <h2>Investment Growth Calculator</h2>
+            <div class="calculator-content">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="initialInvestment">Initial Investment ($)</label>
+                        <input type="number" id="initialInvestment" value="100000" min="1000">
+                    </div>
+                    <div class="form-group">
+                        <label for="monthlyContribution">Monthly Contribution ($)</label>
+                        <input type="number" id="monthlyContribution" value="1000" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="years">Investment Period (Years)</label>
+                        <input type="number" id="years" value="10" min="1" max="40">
+                    </div>
+                    <div class="form-group">
+                        <label for="returnRate">Expected Annual Return (%)</label>
+                        <input type="number" id="returnRate" value="7" min="1" max="20" step="0.1">
+                    </div>
+                    <button class="btn primary calculate-btn">Calculate Growth</button>
+                </div>
+                <div class="calculator-results">
+                    <div class="result-card">
+                        <h3>Projected Value</h3>
+                        <div class="result-value" id="projectedValue">$0</div>
+                    </div>
+                    <div class="result-card">
+                        <h3>Total Contributions</h3>
+                        <div class="result-value" id="totalContributions">$0</div>
+                    </div>
+                    <div class="result-card">
+                        <h3>Total Earnings</h3>
+                        <div class="result-value" id="totalEarnings">$0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section class="clients fade-in-section">
+        <div class="container">
+            <h2>Trusted By</h2>
+            <div class="client-logos">
+                <div class="client-logo">
+                    <div class="logo-placeholder">Vanguard</div>
+                </div>
+                <div class="client-logo">
+                    <div class="logo-placeholder">Fidelity</div>
+                </div>
+                <div class="client-logo">
+                    <div class="logo-placeholder">BlackRock</div>
+                </div>
+                <div class="client-logo">
+                    <div class="logo-placeholder">Schwab</div>
+                </div>
+                <div class="client-logo">
+                    <div class="logo-placeholder">Goldman</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact fade-in-section">
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-content">
@@ -129,16 +502,80 @@
                     <p><strong>Email:</strong> info@apexcapital.com</p>
                     <p><strong>Address:</strong> 123 Financial District, New York, NY 10001</p>
                     <p><strong>Hours:</strong> Monday - Friday: 9AM - 5PM</p>
+
+                    <!-- Security Section -->
+                    <div class="security-info">
+                        <h4>🔒 Your Security is Our Priority</h4>
+                        <ul>
+                            <li>✓ 256-bit SSL Encryption</li>
+                            <li>✓ SOC 2 Type II Certified</li>
+                            <li>✓ SIPC Protected up to $500K</li>
+                            <li>✓ GDPR Compliant</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="contact-form">
                     <h3>Send us a message</h3>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn primary">Send Message</button>
+                    <!-- Trust Badges -->
+                    <div class="trust-badges">
+                        <div class="trust-badge">
+                            <span class="badge-icon">🔒</span>
+                            <span class="badge-text">Secure Form</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="badge-icon">⚡</span>
+                            <span class="badge-text">Quick Response</span>
+                        </div>
+                        <div class="trust-badge">
+                            <span class="badge-icon">✓</span>
+                            <span class="badge-text">No Spam</span>
+                        </div>
+                    </div>
+                    <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary magnetic-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+                        <div class="form-message success" style="display: none;">
+                            ✓ Thank you! Your message has been sent successfully.
+                        </div>
+                        <div class="form-message error" style="display: none;">
+                            ✗ Sorry, there was an error. Please try again.
+                        </div>
                     </form>
+                    <!-- Guarantee Badge -->
+                    <div class="guarantee-badge">
+                        <span class="guarantee-icon">🛡️</span>
+                        <div class="guarantee-text">
+                            <strong>100% Satisfaction Guarantee</strong>
+                            <p>We respond to all inquiries within 24 hours</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter fade-in-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated with Market Insights</h2>
+                <p>Get weekly investment tips, market analysis, and financial planning strategies delivered to your inbox.</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required aria-label="Email for newsletter">
+                    <button type="submit" class="btn primary">Subscribe</button>
+                </form>
+                <p class="newsletter-note">🔒 No spam, unsubscribe anytime. Join 5,000+ investors.</p>
             </div>
         </div>
     </section>
@@ -151,10 +588,9 @@
                     <img src="images/logo.png" alt="Apex Capital Logo">
                 </div>
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#disclosures">Disclosures</a>
                 </div>
                 <div class="footer-social">
                     <p>© 2023 Apex Capital. All rights reserved.</p>
@@ -163,28 +599,35 @@
         </div>
     </footer>
 
+    </main>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" id="backToTop">
+        <span>↑</span>
+    </button>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
     <script>
-        // Mobile menu toggle
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle');
             const nav = document.querySelector('nav');
             const navMask = document.querySelector('.nav-mask');
             const header = document.querySelector('header');
-            
+
             menuToggle.addEventListener('click', () => {
                 menuToggle.classList.toggle('active');
                 nav.classList.toggle('active');
                 navMask.classList.toggle('active');
             });
-            
-            // Close menu when clicking on the mask
+
             navMask.addEventListener('click', () => {
                 menuToggle.classList.remove('active');
                 nav.classList.remove('active');
                 navMask.classList.remove('active');
             });
-            
-            // Close menu when clicking on a link
+
             document.querySelectorAll('nav a').forEach(link => {
                 link.addEventListener('click', () => {
                     menuToggle.classList.remove('active');
@@ -192,17 +635,563 @@
                     navMask.classList.remove('active');
                 });
             });
-            
-            // Header background change on scroll
+
+            // Header background change on scroll - gradual transition
             if (header) {
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 100) {
-                        header.classList.add('scrolled');
+                const logoWhite = header.querySelector('.logo-white');
+                const logoDark = header.querySelector('.logo-dark');
+                const isDarkMode = document.documentElement.getAttribute('data-theme') === 'dark';
+
+                function updateHeaderOnScroll() {
+                    const scrollY = window.scrollY;
+                    const heroHeight = document.querySelector('.hero').offsetHeight;
+                    const transitionPoint = Math.min(heroHeight * 0.5, 150);
+                    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+                    if (scrollY < transitionPoint) {
+                        const opacity = scrollY / transitionPoint;
+                        const blur = opacity * 10;
+                        const shadowOpacity = opacity * 0.15;
+
+                        if (isDark) {
+                            header.style.background = `rgba(15, 23, 42, ${opacity})`;
+                            header.style.boxShadow = `0 5px 20px rgba(0,0,0,${shadowOpacity})`;
+                        } else {
+                            header.style.background = `rgba(255, 255, 255, ${opacity})`;
+                            header.style.boxShadow = `0 5px 20px rgba(0,0,0,${shadowOpacity})`;
+                        }
+                        header.style.backdropFilter = `blur(${blur}px)`;
+                        header.style.webkitBackdropFilter = `blur(${blur}px)`;
+
+                        if (logoWhite && logoDark) {
+                            logoWhite.style.opacity = 1 - opacity;
+                            logoDark.style.opacity = opacity;
+                        }
+
+                        if (opacity > 0.5) {
+                            header.classList.add('scrolled');
+                        } else {
+                            header.classList.remove('scrolled');
+                        }
                     } else {
-                        header.classList.remove('scrolled');
+                        if (isDark) {
+                            header.style.background = 'rgba(15, 23, 42, 1)';
+                        } else {
+                            header.style.background = 'rgba(255, 255, 255, 1)';
+                        }
+                        header.style.backdropFilter = 'blur(10px)';
+                        header.style.webkitBackdropFilter = 'blur(10px)';
+                        header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.15)';
+
+                        if (logoWhite && logoDark) {
+                            logoWhite.style.opacity = 0;
+                            logoDark.style.opacity = 1;
+                        }
+
+                        header.classList.add('scrolled');
                     }
+                }
+
+                window.addEventListener('scroll', updateHeaderOnScroll);
+                updateHeaderOnScroll();
+            }
+
+            // Scroll Progress Indicator
+            const scrollProgress = document.querySelector('.scroll-progress');
+            if (scrollProgress) {
+                window.addEventListener('scroll', () => {
+                    const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+                    const scrolled = (window.scrollY / windowHeight) * 100;
+                    scrollProgress.style.width = scrolled + '%';
                 });
             }
+
+            // Parallax effect for floating shapes
+            const shapes = document.querySelectorAll('.shape');
+            if (shapes.length > 0) {
+                document.addEventListener('mousemove', (e) => {
+                    const mouseX = e.clientX / window.innerWidth;
+                    const mouseY = e.clientY / window.innerHeight;
+
+                    shapes.forEach((shape, index) => {
+                        const speed = (index + 1) * 20;
+                        const x = (mouseX - 0.5) * speed;
+                        const y = (mouseY - 0.5) * speed;
+                        shape.style.transform = `translate(${x}px, ${y}px)`;
+                    });
+                });
+            }
+
+            // Typing effect for hero headline
+            const heroHeading = document.querySelector('.hero h1');
+            if (heroHeading) {
+                const text = heroHeading.textContent;
+                heroHeading.textContent = '';
+                let charIndex = 0;
+
+                function typeText() {
+                    if (charIndex < text.length) {
+                        heroHeading.textContent += text.charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeText, 50);
+                    } else {
+                        heroHeading.classList.add('typing-complete');
+                    }
+                }
+
+                setTimeout(typeText, 500);
+            }
+
+            // Scroll animations - Fade in sections
+            const fadeElements = document.querySelectorAll('.fade-in-section');
+            const staggerElements = document.querySelectorAll('.stagger-children');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const fadeObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            fadeElements.forEach(el => fadeObserver.observe(el));
+            staggerElements.forEach(el => fadeObserver.observe(el));
+
+            // Statistics counter animation with easing
+            const statNumbers = document.querySelectorAll('.stat-number');
+            let statsAnimated = false;
+
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !statsAnimated) {
+                        statsAnimated = true;
+                        animateCounters();
+                        statsObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            const statisticsSection = document.querySelector('.statistics');
+            if (statisticsSection) {
+                statsObserver.observe(statisticsSection);
+            }
+
+            function easeOutCubic(t) {
+                return 1 - Math.pow(1 - t, 3);
+            }
+
+            function formatNumber(num, type) {
+                if (type === 'assets') {
+                    return '$' + num;
+                } else if (type === 'clients') {
+                    return num.toLocaleString();
+                }
+                return num;
+            }
+
+            function animateCounters() {
+                statNumbers.forEach((stat, index) => {
+                    const target = parseInt(stat.getAttribute('data-target'));
+                    const type = stat.getAttribute('data-type') || 'default';
+                    const duration = 2000;
+                    const startTime = performance.now();
+
+                    function updateCounter(currentTime) {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const easedProgress = easeOutCubic(progress);
+                        const current = Math.floor(easedProgress * target);
+
+                        let displayText = formatNumber(current, type);
+                        if (type === 'assets') {
+                            displayText += 'M';
+                        } else {
+                            displayText += '+';
+                        }
+
+                        stat.textContent = displayText;
+
+                        if (progress < 1) {
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            stat.textContent = formatNumber(target, type) + (type === 'assets' ? 'M' : '+');
+                            stat.classList.add('complete');
+                        }
+                    }
+
+                    setTimeout(() => {
+                        requestAnimationFrame(updateCounter);
+                    }, index * 150);
+                });
+            }
+
+            // Testimonials Carousel
+            const testimonialsTrack = document.querySelector('.testimonials-track');
+            const dots = document.querySelectorAll('.carousel-dot');
+            let currentSlide = 0;
+            let carouselInterval;
+
+            if (testimonialsTrack && dots.length > 0) {
+                function goToSlide(index) {
+                    currentSlide = index;
+                    testimonialsTrack.style.transform = `translateX(-${index * 100}%)`;
+                    dots.forEach((dot, i) => {
+                        dot.classList.toggle('active', i === index);
+                    });
+                }
+
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % dots.length;
+                    goToSlide(currentSlide);
+                }
+
+                function startCarousel() {
+                    carouselInterval = setInterval(nextSlide, 5000);
+                }
+
+                function stopCarousel() {
+                    clearInterval(carouselInterval);
+                }
+
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        stopCarousel();
+                        goToSlide(index);
+                        startCarousel();
+                    });
+                });
+
+                const testimonialsSection = document.querySelector('.testimonials');
+                if (testimonialsSection) {
+                    testimonialsSection.addEventListener('mouseenter', stopCarousel);
+                    testimonialsSection.addEventListener('mouseleave', startCarousel);
+                }
+
+                startCarousel();
+            }
+
+            // Contact form validation and submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+
+                    const btnText = this.querySelector('.btn-text');
+                    const btnLoading = this.querySelector('.btn-loading');
+                    const successMsg = this.querySelector('.form-message.success');
+                    const errorMsg = this.querySelector('.form-message.error');
+                    const inputs = this.querySelectorAll('input, textarea');
+
+                    successMsg.style.display = 'none';
+                    errorMsg.style.display = 'none';
+                    inputs.forEach(input => input.classList.remove('error'));
+
+                    let isValid = true;
+                    inputs.forEach(input => {
+                        if (!input.value.trim()) {
+                            input.classList.add('error');
+                            isValid = false;
+                        }
+                        if (input.type === 'email' && !isValidEmail(input.value)) {
+                            input.classList.add('error');
+                            isValid = false;
+                        }
+                    });
+
+                    if (!isValid) return;
+
+                    btnText.style.display = 'none';
+                    btnLoading.style.display = 'inline';
+
+                    const formData = new FormData(this);
+
+                    try {
+                        const response = await fetch(this.action, {
+                            method: 'POST',
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        });
+
+                        if (response.ok) {
+                            successMsg.style.display = 'block';
+                            this.reset();
+                        } else {
+                            errorMsg.style.display = 'block';
+                        }
+                    } catch (error) {
+                        errorMsg.style.display = 'block';
+                    } finally {
+                        btnText.style.display = 'inline';
+                        btnLoading.style.display = 'none';
+                    }
+                });
+
+                function isValidEmail(email) {
+                    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+                }
+
+                contactForm.querySelectorAll('input, textarea').forEach(input => {
+                    input.addEventListener('input', function() {
+                        this.classList.remove('error');
+                    });
+                });
+            }
+
+            // Dark Mode Toggle
+            const darkModeToggles = document.querySelectorAll('.dark-mode-toggle');
+            const darkModeIcons = document.querySelectorAll('.dark-mode-icon');
+            const darkModeTexts = document.querySelectorAll('.dark-mode-text');
+
+            function updateDarkModeUI(isDark) {
+                darkModeIcons.forEach(icon => icon.textContent = isDark ? '☀️' : '🌙');
+                darkModeTexts.forEach(text => text.textContent = isDark ? 'Light Mode' : 'Dark Mode');
+            }
+
+            if (localStorage.getItem('darkMode') === 'true') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                updateDarkModeUI(true);
+            }
+
+            darkModeToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                    if (isDark) {
+                        document.documentElement.removeAttribute('data-theme');
+                        localStorage.setItem('darkMode', 'false');
+                        updateDarkModeUI(false);
+                    } else {
+                        document.documentElement.setAttribute('data-theme', 'dark');
+                        localStorage.setItem('darkMode', 'true');
+                        updateDarkModeUI(true);
+                    }
+                });
+            });
+
+            // Social Proof Notifications
+            const socialProof = document.getElementById('socialProof');
+            const socialProofClose = document.querySelector('.social-proof-close');
+            const notifications = [
+                { name: 'Sarah from NY', action: 'signed up for a consultation' },
+                { name: 'Michael from CA', action: 'requested portfolio review' },
+                { name: 'Jennifer from TX', action: 'scheduled a meeting' },
+                { name: 'David from FL', action: 'started investing with us' },
+                { name: 'Amanda from IL', action: 'joined our newsletter' }
+            ];
+
+            let notificationIndex = 0;
+            let notificationTimeout;
+
+            function showNotification() {
+                const notification = notifications[notificationIndex];
+                const textEl = socialProof.querySelector('.social-proof-text');
+                textEl.innerHTML = '<strong>' + notification.name + '</strong> ' + notification.action;
+                socialProof.classList.add('show');
+
+                notificationTimeout = setTimeout(() => {
+                    socialProof.classList.remove('show');
+                    setTimeout(() => {
+                        notificationIndex = (notificationIndex + 1) % notifications.length;
+                        showNotification();
+                    }, 1000);
+                }, 5000);
+            }
+
+            socialProofClose.addEventListener('click', () => {
+                socialProof.classList.remove('show');
+                clearTimeout(notificationTimeout);
+            });
+
+            setTimeout(showNotification, 3000);
+
+            // Back to Top Button
+            const backToTop = document.getElementById('backToTop');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            });
+
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // FAQ Accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isOpen = answer.classList.contains('open');
+
+                    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+                    document.querySelectorAll('.faq-question').forEach(q => q.setAttribute('aria-expanded', 'false'));
+
+                    if (!isOpen) {
+                        answer.classList.add('open');
+                        question.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            // Investment Calculator
+            const calculateBtn = document.querySelector('.calculate-btn');
+
+            if (calculateBtn) {
+                calculateBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    const initial = parseFloat(document.getElementById('initialInvestment').value);
+                    const monthly = parseFloat(document.getElementById('monthlyContribution').value);
+                    const years = parseFloat(document.getElementById('years').value);
+                    const rate = parseFloat(document.getElementById('returnRate').value) / 100;
+
+                    let futureValue = initial;
+                    const months = years * 12;
+                    const monthlyRate = rate / 12;
+
+                    for (let i = 0; i < months; i++) {
+                        futureValue = (futureValue + monthly) * (1 + monthlyRate);
+                    }
+
+                    const totalContributions = initial + (monthly * months);
+                    const totalEarnings = futureValue - totalContributions;
+
+                    animateValue('projectedValue', 0, futureValue, 1000, true);
+                    animateValue('totalContributions', 0, totalContributions, 1000, true);
+                    animateValue('totalEarnings', 0, totalEarnings, 1000, true);
+                });
+
+                function animateValue(id, start, end, duration, isCurrency) {
+                    const obj = document.getElementById(id);
+                    const range = end - start;
+                    const startTime = performance.now();
+
+                    function update(currentTime) {
+                        const elapsed = currentTime - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const current = start + (range * easeOutCubic(progress));
+
+                        obj.textContent = isCurrency ? '$' + Math.round(current).toLocaleString() : Math.round(current).toLocaleString();
+
+                        if (progress < 1) {
+                            requestAnimationFrame(update);
+                        }
+                    }
+
+                    requestAnimationFrame(update);
+                }
+            }
+
+            // Confetti Effect
+            function createConfetti() {
+                const canvas = document.getElementById('confettiCanvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                const confettiCount = 150;
+                const confetti = [];
+                const colors = ['#2563eb', '#3b82f6', '#60a5fa', '#10b981', '#f59e0b'];
+
+                for (let i = 0; i < confettiCount; i++) {
+                    confetti.push({
+                        x: Math.random() * canvas.width,
+                        y: Math.random() * canvas.height - canvas.height,
+                        w: Math.random() * 10 + 5,
+                        h: Math.random() * 6 + 3,
+                        color: colors[Math.floor(Math.random() * colors.length)],
+                        speed: Math.random() * 3 + 2,
+                        angle: Math.random() * Math.PI * 2,
+                        spin: Math.random() * 0.2 - 0.1
+                    });
+                }
+
+                let frames = 0;
+                const maxFrames = 180;
+
+                function draw() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                    confetti.forEach(c => {
+                        ctx.save();
+                        ctx.translate(c.x + c.w / 2, c.y + c.h / 2);
+                        ctx.rotate(c.angle);
+                        ctx.fillStyle = c.color;
+                        ctx.fillRect(-c.w / 2, -c.h / 2, c.w, c.h);
+                        ctx.restore();
+
+                        c.y += c.speed;
+                        c.angle += c.spin;
+
+                        if (c.y > canvas.height) {
+                            c.y = -20;
+                            c.x = Math.random() * canvas.width;
+                        }
+                    });
+
+                    frames++;
+                    if (frames < maxFrames) {
+                        requestAnimationFrame(draw);
+                    } else {
+                        ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    }
+                }
+
+                draw();
+            }
+
+            // Trigger confetti on form success
+            const successMsg = document.querySelector('.form-message.success');
+            if (successMsg) {
+                const observer = new MutationObserver((mutations) => {
+                    mutations.forEach((mutation) => {
+                        if (mutation.target.style.display === 'block') {
+                            createConfetti();
+                        }
+                    });
+                });
+                observer.observe(successMsg, { attributes: true, attributeFilter: ['style'] });
+            }
+
+            // Newsletter Form
+            const newsletterForm = document.getElementById('newsletterForm');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]');
+                    alert('Thank you for subscribing! You\'ll receive our next newsletter.');
+                    email.value = '';
+                });
+            }
+
+            // Magnetic Buttons
+            const magneticBtns = document.querySelectorAll('.magnetic-btn');
+
+            magneticBtns.forEach(btn => {
+                btn.addEventListener('mousemove', (e) => {
+                    const rect = btn.getBoundingClientRect();
+                    const x = e.clientX - rect.left - rect.width / 2;
+                    const y = e.clientY - rect.top - rect.height / 2;
+
+                    btn.style.transform = 'translate(' + (x * 0.2) + 'px, ' + (y * 0.2) + 'px)';
+                });
+
+                btn.addEventListener('mouseleave', () => {
+                    btn.style.transform = 'translate(0, 0)';
+                });
+            });
         });
     </script>
 </body>
